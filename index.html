@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nyanyan - Authentieke Surinaamse Soulfood</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #111;
+    }
+    header {
+      background-color: #007847;
+      color: white;
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    header img {
+      height: 60px;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+    .hero {
+      background-color: #ef3340;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .btn-order {
+      background-color: #fcd116;
+      color: #111;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 2rem;
+    }
+    .about, .menu, .order, .reviews, .instagram {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+    .menu-items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .menu-item {
+      border: 2px solid #007847;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .menu-item h3 {
+      margin: 0.5rem 0;
+      color: #007847;
+    }
+    .menu-item p {
+      margin: 0.5rem 0;
+    }
+    .review {
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+    .instagram-feed {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .instagram-feed img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: #007847;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
+    @media (max-width: 768px) {
+      .menu-items {
+        grid-template-columns: 1fr;
+      }
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="nyanyan_transparant.png" alt="Nyanyan Logo">
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/over-ons.html">Over ons</a>
+      <a href="#menu">Menu</a>
+      <a href="#bestellen">Bestellen</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Welkom bij Nyanyan</h1>
+    <p>Authentieke Surinaamse soulfood voor echte genieters. Bestel jouw favoriete gerechten voor dit weekend!</p>
+    <a href="#bestellen" class="btn-order">Bestel Nu</a>
+  </section>
+  <section class="about">
+    <h2>Over Nyanyan</h2>
+    <p>Bij Nyanyan brengen we de smaken van Suriname tot leven. Denk aan heerlijke roti, bami, pom en meer — huisgemaakt met liefde en traditie. Laat jouw weekend smaken met onze soulfood specials!</p>
+  </section>
+  <section class="menu" id="menu">
+    <h2>Ons Menu</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <h3>Roti Kipfilet</h3>
+        <p>Met kousenband, aardappel en ei</p>
+        <strong>€12,00</strong>
+      </div>
+      <div class="menu-item">
+        <h3>Surinaamse Bami</h3>
+        <p>Geserveerd met kip en zuur</p>
+        <strong>€10,00</strong>
+      </div>
+      <div class="menu-item">
+        <h3>Pom met Rijst</h3>
+        <p>Traditioneel ovengerecht van tayer</p>
+        <strong>€15,00</strong>
+      </div>
+      <div class="menu-item">
+        <h3>Bara Kip Kerrie</h3>
+        <p>Versgebakken bara met pittige kip</p>
+        <strong>€10,00</strong>
+      </div>
+    </div>
+  </section>
+  <section class="order" id="bestellen">
+    <h2>Bestellen</h2>
+    <p>Gebruik het onderstaande formulier of stuur ons een bericht via WhatsApp/Instagram.</p>
+    <a href="https://forms.gle/voorbeeld" class="btn-order" target="_blank">Bestel via Google Formulier</a>
+  </section>
+  <section class="reviews">
+    <h2>Wat klanten zeggen</h2>
+    <p class="review">“De roti was heerlijk! Net als thuis. Ik kom zeker terug.” – Samantha</p>
+    <p class="review">“Smaakvol, warm en precies op tijd bezorgd. Dankjewel Nyanyan!” – Jeffrey</p>
+    <p class="review">“Mijn favoriete food fest in het weekend. Alles is top!” – Aisha</p>
+  </section>
+  <section class="instagram">
+    <h2>Volg ons op Instagram</h2>
+    <div class="instagram-feed">
+      <img src="https://via.placeholder.com/150" alt="Foto 1">
+      <img src="https://via.placeholder.com/150" alt="Foto 2">
+      <img src="https://via.placeholder.com/150" alt="Foto 3">
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 Nyanyan | Weekend Food Fest | Surinaamse Soulfood
+  </footer>
+</body>
+</html>
